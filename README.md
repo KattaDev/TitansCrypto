@@ -34,7 +34,16 @@ Imtihon uchun yozgan dasturim.
   <img src="https://i.ibb.co/B68FTZ4/photo-2021-12-03-21-02-11.jpg"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
- ### Natija
+     
+  ### Statistic page
+ </br>
+ </br>
+ 
+  <img src="https://i.ibb.co/fkPXrJq/stat.jpg"
+     alt="Onboarding page"
+     style="float: left; margin-right: 10px;" width="200" />
+     
+  ### Natija
 
  </br>
  </br>
