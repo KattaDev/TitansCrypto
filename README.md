@@ -13,7 +13,7 @@ Imtihon uchun yozgan dasturim.
  </br>
  </br>
  
- <img src="https://ibb.co/wprTWWG"
+ <img src="https://i.ibb.co/wprTWWG/Screenshot-from-2021-12-03-20-53-47.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200"/>
 ### User2 uchun Login Page
