@@ -17,12 +17,12 @@ class _SignInState extends State<SignIn> {
   bool chek = true;
   bool signin = true;
   bool isEmail = true;
-  late Services _apiService;
+   Services _apiService=Helper();
 
   @override
   void initState() {
     super.initState();
-   
+    
   }
 
   @override
@@ -35,16 +35,13 @@ class _SignInState extends State<SignIn> {
     return Container(
       color: bkColor,
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: getWidth(24)),
+        padding: EdgeInsets.symmetric(horizontal: getWidth(24)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: EdgeInsets.only(
-                  bottom: getHeight(30),
-                  top: getHeight(35),
-                  left: getWidth(5)),
+                  bottom: getHeight(30), top: getHeight(35), left: getWidth(5)),
               child: IconButton(
                   onPressed: () {
                     Navigator.pop(context);
@@ -63,15 +60,11 @@ class _SignInState extends State<SignIn> {
             signin
                 ? Text(
                     "Sign in",
-                    style: TextStyle(
-                        fontSize: getWidth(32),
-                        color: whColor),
+                    style: TextStyle(fontSize: getWidth(32), color: whColor),
                   )
                 : Text(
                     "Sign up",
-                    style: TextStyle(
-                        fontSize: getWidth(32),
-                        color: whColor),
+                    style: TextStyle(fontSize: getWidth(32), color: whColor),
                   ),
             SizedBox(
               height: getHeight(44),
@@ -91,8 +84,7 @@ class _SignInState extends State<SignIn> {
       height: getHeight(46),
       width: getWidth(366),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(
-              Radius.circular(getWidth(12))),
+          borderRadius: BorderRadius.all(Radius.circular(getWidth(12))),
           color: blackColor),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -112,8 +104,7 @@ class _SignInState extends State<SignIn> {
               height: getHeight(38),
               width: getWidth(162),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
-                    Radius.circular(getWidth(12))),
+                borderRadius: BorderRadius.all(Radius.circular(getWidth(12))),
                 color: signin1 ? bkColor : blackColor,
               ),
               child: Text(
@@ -141,8 +132,7 @@ class _SignInState extends State<SignIn> {
               height: getHeight(38),
               width: getWidth(162),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
-                    Radius.circular(getWidth(12))),
+                borderRadius: BorderRadius.all(Radius.circular(getWidth(12))),
                 color: signin1 ? blackColor : bkColor,
               ),
               child: Text(
@@ -171,8 +161,7 @@ class _SignInState extends State<SignIn> {
             ),
             Text(
               "Use fingerprint instead?",
-              style: TextStyle(
-                  fontSize: getWidth(14), color: greywhite),
+              style: TextStyle(fontSize: getWidth(14), color: greywhite),
             )
           ],
         ),
@@ -193,13 +182,10 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getWidth(9)),
+                padding: EdgeInsets.symmetric(horizontal: getWidth(9)),
                 child: Text(
                   "Or login with ",
-                  style: TextStyle(
-                      fontSize: getWidth(14),
-                      color: greyColor),
+                  style: TextStyle(fontSize: getWidth(14), color: greyColor),
                 )),
             Expanded(
               child: Divider(
@@ -224,8 +210,7 @@ class _SignInState extends State<SignIn> {
                     borderRadius: BorderRadius.all(Radius.circular(16)),
                   ),
                   primary: whColor,
-                  fixedSize: Size(getWidth(154),
-                      getHeight(54))),
+                  fixedSize: Size(getWidth(154), getHeight(54))),
             ),
             ElevatedButton(
               onPressed: () {
@@ -237,8 +222,7 @@ class _SignInState extends State<SignIn> {
                     borderRadius: BorderRadius.all(Radius.circular(16)),
                   ),
                   primary: whColor,
-                  fixedSize: Size(getWidth(154),
-                      getHeight(54))),
+                  fixedSize: Size(getWidth(154), getHeight(54))),
             )
           ],
         ),
@@ -263,14 +247,12 @@ class _SignInState extends State<SignIn> {
                         ? Text(
                             "Email",
                             style: TextStyle(
-                                fontSize: getWidth(14),
-                                color: greywhite),
+                                fontSize: getWidth(14), color: greywhite),
                           )
                         : Text(
                             "Your number",
                             style: TextStyle(
-                                fontSize: getWidth(14),
-                                color: greywhite),
+                                fontSize: getWidth(14), color: greywhite),
                           ),
                     isemail1
                         ? InkWell(
@@ -284,8 +266,7 @@ class _SignInState extends State<SignIn> {
                             },
                             child: Text("Sign in with mobile",
                                 style: TextStyle(
-                                    fontSize: getWidth(14),
-                                    color: tealColor)),
+                                    fontSize: getWidth(14), color: tealColor)),
                           )
                         : InkWell(
                             onTap: () {
@@ -297,8 +278,7 @@ class _SignInState extends State<SignIn> {
                             },
                             child: Text("Sign in with email",
                                 style: TextStyle(
-                                    fontSize: getWidth(14),
-                                    color: tealColor)),
+                                    fontSize: getWidth(14), color: tealColor)),
                           )
                   ],
                 )
@@ -307,9 +287,8 @@ class _SignInState extends State<SignIn> {
                   children: [
                     Text(
                       "Email",
-                      style: TextStyle(
-                          fontSize: getWidth(14),
-                          color: greywhite),
+                      style:
+                          TextStyle(fontSize: getWidth(14), color: greywhite),
                     ),
                     InkWell(
                       onTap: () {
@@ -318,8 +297,7 @@ class _SignInState extends State<SignIn> {
                       },
                       child: Text("Registr with mobile",
                           style: TextStyle(
-                              fontSize: getWidth(14),
-                              color: tealColor)),
+                              fontSize: getWidth(14), color: tealColor)),
                     )
                   ],
                 ),
@@ -338,26 +316,22 @@ class _SignInState extends State<SignIn> {
             style: const TextStyle(color: whColor),
             cursorColor: whColor,
             decoration: InputDecoration(
-                constraints:
-                    BoxConstraints(maxHeight: getHeight(54)),
+                constraints: BoxConstraints(maxHeight: getHeight(54)),
                 hintText: isemail1 ? "Enter your email" : "Enter your number",
-                hintStyle: TextStyle(
-                    fontSize: getWidth(14),
-                    color: greyColor),
+                hintStyle: TextStyle(fontSize: getWidth(14), color: greyColor),
                 fillColor: blackColor,
                 filled: true,
                 enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide.none,
-                    borderRadius: BorderRadius.all(
-                        Radius.circular(getWidth(12))))),
+                    borderRadius:
+                        BorderRadius.all(Radius.circular(getWidth(12))))),
           ),
           SizedBox(
             height: getHeight(20),
           ),
           Text(
             "Password",
-            style: TextStyle(
-                fontSize: getWidth(14), color: greywhite),
+            style: TextStyle(fontSize: getWidth(14), color: greywhite),
           ),
           SizedBox(
             height: getHeight(8),
@@ -391,25 +365,21 @@ class _SignInState extends State<SignIn> {
                           color: greyColor,
                         ),
                 ),
-                constraints:
-                    BoxConstraints(maxHeight: getHeight(54)),
+                constraints: BoxConstraints(maxHeight: getHeight(54)),
                 hintText: "Enter your password",
-                hintStyle: TextStyle(
-                    fontSize: getWidth(14),
-                    color: greyColor),
+                hintStyle: TextStyle(fontSize: getWidth(14), color: greyColor),
                 fillColor: blackColor,
                 filled: true,
                 enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide.none,
-                    borderRadius: BorderRadius.all(
-                        Radius.circular(getWidth(12))))),
+                    borderRadius:
+                        BorderRadius.all(Radius.circular(getWidth(12))))),
           ),
           SizedBox(
             height: getHeight(8),
           ),
           Text("Forgot password?",
-              style: TextStyle(
-                  fontSize: getWidth(14), color: tealColor)),
+              style: TextStyle(fontSize: getWidth(14), color: tealColor)),
           SizedBox(
             height: getHeight(20),
           ),
@@ -422,9 +392,7 @@ class _SignInState extends State<SignIn> {
                         _apiService.inemailController.text,
                         _apiService.inpasswordController.text,
                         context);
-                  }else{
-                    
-                  }
+                  } else {}
                 } else {
                   if (isEmail) {
                     await _apiService.createUser(
@@ -438,15 +406,11 @@ class _SignInState extends State<SignIn> {
             child: signin
                 ? Text(
                     "Sign in",
-                    style: TextStyle(
-                        color: blackColor,
-                        fontSize: getWidth(16)),
+                    style: TextStyle(color: blackColor, fontSize: getWidth(16)),
                   )
                 : Text(
                     "Sign up",
-                    style: TextStyle(
-                        color: blackColor,
-                        fontSize: getWidth(16)),
+                    style: TextStyle(color: blackColor, fontSize: getWidth(16)),
                   ),
             style: ElevatedButton.styleFrom(
               primary: tealColor,
