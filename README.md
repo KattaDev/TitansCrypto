@@ -40,4 +40,4 @@ Imtihon uchun yozgan dasturim.
  </br>
  
  
- <a href="https://github.com/KattaDev/TitansCrypto/blob/main/assets/app-armeabi-v7a-release.apk" download>Dasturni yuklab olish</a>
+ <a href="https://github.com/KattaDev/TitansCrypto/blob/main/app-armeabi-v7a-release.apk" download>Dasturni yuklab olish</a>
